@@ -1,11 +1,88 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 2rem;
-  line-height: 1.6;
-}
-h1, h2 {
+  font-family: 'Inter', sans-serif;
   color: #333;
+  background-color: #fdfdfd;
+  line-height: 1.6;
+  padding: 2rem;
 }
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #fff6f0;
+  color: #2c2c2c;
+}
+
+.site-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
+/* Sections */
 section {
-  margin-bottom: 3rem;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #5a3e36;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Paragraphs and lists */
+p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.5rem 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  background-color: #5a3e36;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #422b26;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .site-header h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
 }
