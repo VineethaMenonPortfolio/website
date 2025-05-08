@@ -47,13 +47,6 @@ section {
   background-color: #a8dadc;
 }
 
-/* Landing Section */
-.landing {
-  background-color: #1d3557;
-  color: #fff;
-  padding: 80px 40px;
-  text-align: center;
-}
 
 /* Landing Section */
 .landing {
@@ -147,7 +140,7 @@ section {
 
 /* Companies Section */
 .companies {
-  padding: 60px 40px;
+  padding: 40px 40px;
 }
 
 .companies h2 {
@@ -161,12 +154,12 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 35px;
   margin-top: 20px;
 }
 
 .company-logos img {
-  width: 120px;
+  width: 140px;
   height: auto;
   object-fit: contain;
   transition: transform 0.3s, filter 0.3s;
@@ -180,7 +173,6 @@ section {
 /* Testimonials Section */
 .testimonials {
   padding: 60px 40px;
-  font-style: italic;
   background-color: #f1faee;
 }
 
@@ -209,7 +201,7 @@ section {
 }
 
 .why-me p {
-  font-size: 2.5em;
+  font-size: 1.2em;
   margin-bottom: 20px;
 }
 
