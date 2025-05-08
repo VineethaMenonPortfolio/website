@@ -1,186 +1,209 @@
-/* Base styles */
+/* Global Styles */
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  color: #222;
-  background-color: #fff;
-  line-height: 1.6;
-}
-
-/* Reusable layout wrapper */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
   box-sizing: border-box;
+  background-color: #f4f4f4;
 }
 
-/* Global section styling */
-section {
-  width: 100%;
-  padding: 80px 0;
-  box-sizing: border-box;
-}
-
-/* Global heading styles */
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  text-align: center;
   margin-bottom: 20px;
 }
 
-/* Landing section */
-.landing {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background-color: #f8fdfa;
-  padding: 100px 20px;
-  gap: 40px;
+h1 {
+  font-size: 3rem;
+  text-align: center;
 }
 
-.landing-text {
-  max-width: 600px;
-  flex: 1;
-  font-size: 1.125rem;
-  line-height: 1.7;
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Landing Section */
+.landing {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.landing-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.landing-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .landing-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+  max-width: 600px;
 }
 
-.landing img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-/* About section */
+/* About Section */
 .about {
-  background-color: #ffffff;
-}
-
-.about .container {
-  text-align: left;
+  background-color: #ecf0f1;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .about ul {
-  list-style: none;
-  padding-left: 0;
+  list-style-type: disc;
+  padding-left: 40px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.about ul li {
-  margin-bottom: 10px;
+.about p {
+  max-width: 800px;
+  margin: 0 auto 20px;
 }
 
-/* Skills section */
-.skills-section {
-  background-color: #f0f8f7;
+/* Key Skills Section */
+.key-skills {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .skills {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
-  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 0;
-  margin: 0;
+  list-style-type: none;
 }
 
 .skills li {
-  background-color: #ffffff;
-  color: #004d4d;
-  border: 1px solid #b2dfdb;
+  background-color: #3498db;
+  color: white;
   padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: background 0.2s ease;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
 }
 
 .skills li:hover {
-  background-color: #e0f7f5;
+  transform: scale(1.05);
 }
 
-/* Logos section */
+/* Companies Section */
 .companies {
-  background-color: #e6f2f0;
-  text-align: center;
-  padding: 40px 20px;
+  background-color: #ecf0f1;
+  padding: 60px 20px;
 }
 
 .company-logos {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 40px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .company-logos img {
-  max-height: 40px;
-  object-fit: contain;
-  filter: none;
+  max-width: 120px;  /* Ensure all logos are the same size */
+  height: auto;
+  object-fit: contain; /* Maintain the logo aspect ratio */
 }
 
-/* Why Me */
-.why-me {
-  background-color: #e0f2f1;
-  text-align: center;
-}
-
-.why-me .container {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* Get in touch section */
-.get-in-touch {
-  background-color: #f0f8f7;
-  text-align: center;
-}
-
-.get-in-touch button {
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  background-color: #004d4d;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.get-in-touch button:hover {
-  background-color: #003636;
-}
-
-/* Testimonials */
+/* Testimonials Section */
 .testimonials {
-  background-color: #fefefe;
+  background-color: #ffffff;
+  padding: 60px 20px;
   text-align: center;
+}
+
+.testimonials p {
+  max-width: 800px;
+  margin: 0 auto 20px;
   font-style: italic;
-  padding: 60px 40px;
+  color: #555;
 }
 
-/* Footer */
-footer {
-  background-color: #e0f2f1;
+.testimonials h2 {
+  margin-bottom: 30px;
+}
+
+/* Why Me Section */
+.why-me {
+  background-color: #ecf0f1;
+  padding: 60px 20px;
   text-align: center;
-  padding: 30px 0;
-  font-size: 0.9rem;
 }
 
-footer img {
-  height: 18px;
-  vertical-align: middle;
-  margin-left: 6px;
+.why-me p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact .button {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact .button:hover {
+  background-color: #2980b9;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
+
+.footer-icon-img {
+  width: 30px;
+  height: auto;
+  margin: 0 10px;
 }
