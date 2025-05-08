@@ -10,6 +10,9 @@ body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: #333;
+  padding: 0 20px;  /* Add padding to body for side margins */
+  max-width: 100%;
+  width: 100%;
 }
 
 /* Header styles */
@@ -30,7 +33,7 @@ body {
 /* Landing Section */
 .landing {
   background-color: #f5f5f5;
-  padding: 40px 0;
+  padding: 80px 20px;  /* Adjust padding to give more height to landing */
   text-align: center;
 }
 
@@ -56,7 +59,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 20px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;  /* Center the section */
 }
 
 .about h2 {
@@ -70,6 +75,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .about-text {
@@ -85,7 +91,9 @@ body {
 
 /* Key Skills Section */
 .key-skills {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;  /* Center the section */
 }
 
 .key-skills h2 {
@@ -107,7 +115,9 @@ body {
 
 /* Companies I've Worked With */
 .companies {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;  /* Center the section */
 }
 
 .companies h2 {
@@ -136,7 +146,9 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;  /* Center the section */
 }
 
 .testimonials h2 {
@@ -153,7 +165,9 @@ body {
 
 /* Why Me Section */
 .why-me {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;  /* Center the section */
 }
 
 .why-me h2 {
@@ -170,7 +184,9 @@ body {
 
 /* Contact Section */
 .contact {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;  /* Center the section */
 }
 
 .contact h2 {
