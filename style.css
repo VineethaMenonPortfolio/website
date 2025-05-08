@@ -3,49 +3,52 @@
 
 /* General Styles */
 body {
-  font-family: 'Inter', sans-serif; /* Updated font to Inter */
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #f9f9f9;
+  color: #222;
 }
 
 /* Global Section Padding */
 section {
-  padding: 40px 30px; /* 30px side padding */
-  margin-bottom: 40px; /* Added space between sections */
+  padding: 60px 30px;
+  margin-bottom: 60px;
 }
 
 /* Header Section */
 header {
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   text-align: left;
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 header .logo {
-  max-width: 120px;
+  max-width: 140px;
   height: auto;
 }
 
 header .social-links {
-  display: none; /* Removed LinkedIn icon */
+  display: none;
 }
 
 /* Landing Section */
 .landing {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .landing .image {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -54,60 +57,61 @@ header .social-links {
 .landing .text {
   flex: 1;
   max-width: 600px;
-  text-align: justify;
+  text-align: left;
 }
 
 .landing h1 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .landing p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #555;
+  line-height: 1.6;
 }
 
 /* Logos Section */
 .logos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
 }
 
 .logos img {
-  width: 120px;
-  height: 60px;
+  width: 100px;
+  height: auto;
   object-fit: contain;
-  transition: all 0.3s ease;
-  filter: none; /* Ensures original colors */
+  transition: transform 0.3s ease;
+  filter: none;
 }
 
 .logos img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Testimonials Section */
 .testimonials {
-  background-color: #fff;
-  text-align: justify;
+  background-color: #ffffff;
 }
 
 .testimonials h2 {
   font-size: 2rem;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .testimonial {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1rem;
+  color: #444;
   font-style: italic;
   max-width: 800px;
-  padding: 15px;
-  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 0 auto 30px;
+  background-color: #f0f0f0;
   border-left: 5px solid #007bff;
-  margin-bottom: 20px;
 }
 
 .testimonial p {
@@ -119,7 +123,7 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 20px 30px;
+  padding: 30px;
 }
 
 footer p {
@@ -137,27 +141,22 @@ footer a:hover {
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .logos {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logos img {
-    width: 100px;
-    margin-bottom: 15px;
-  }
-
   .landing {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .landing .image {
-    margin-bottom: 20px;
-  }
-
   .landing .text {
     max-width: 90%;
+    text-align: center;
+  }
+
+  .logos {
+    justify-content: center;
+  }
+
+  .logos img {
+    width: 80px;
   }
 }
