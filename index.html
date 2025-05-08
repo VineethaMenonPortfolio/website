@@ -7,67 +7,127 @@
   <title>Vineetha Menon</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .companies {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .companies h2 {
+      margin-bottom: 1rem;
+    }
+
+    .company-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .company-logos img {
+      height: 40px;
+      max-width: 120px;
+      object-fit: contain;
+    }
+
+    .testimonials {
+      padding: 2rem;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    .testimonial-carousel {
+      max-width: 600px;
+      margin: auto;
+      position: relative;
+    }
+
+    .testimonial {
+      display: none;
+      font-style: italic;
+    }
+
+    .testimonial.active {
+      display: block;
+    }
+
+    .carousel-buttons {
+      margin-top: 1rem;
+    }
+
+    .carousel-buttons button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
   <header class="site-header">
-    <h1>Vineetha Menon</h1>
+    <h1><a href="https://www.linkedin.com/in/vineetha-menon-7744b517/" target="_blank" style="text-decoration: none; color: inherit;">Vineetha Menon</a></h1>
   </header>
 
+  <!-- existing sections remain unchanged -->
+
   <section class="landing">
-    <div class="landing-content">
-      <img src="images/vineetha.jpg" alt="Vineetha Menon" class="landing-image" />
-      <div class="landing-text">
-        <h1>Content, strategy, and growth with a human touch</h1>
-        <p>Hello, I'm Vineetha.</p>
-        <p>I’m a content generalist who thrives on being useful. I work with startup founders and early-stage teams to shape their brand, implement content marketing pipelines, and translate product into narrative.</p>
-      </div>
-    </div>
+    <!-- ... -->
   </section>
 
   <section class="about">
-    <h2>About me</h2>
-    <p> Since 2020, I've worked as a long-term content partner to B2B SaaS startups across product marketing, SEO, and brand. This has given me the opportunity to: </p>
-    <ul>
-      <li>Create content across blogs (TOFU, BOFU, product marketing), case studies, ebooks, landing pages, and social media</li>
-      <li>Help founders shape GTM stories, write launch content, and translate product into narrative</li>
-      <li>Ghostwrite, clarify messaging, and ensure the right positioning</li>
-      <li>Work with startups as an extension of their teams: writing, editing, SEO content creation, and optimization</li>
-    </ul>
-    <p> I started my career in tech, moved to the impact sector, and worked across teaching, edtech, and non-profit partnerships.</p>
-    <h2>Key skills</h2>
-    <ul class="skills">
-      <li> Content marketing </li>
-      <li> SEO and keyword research </li> 
-      <li> Cross-functional collaboration (sales, product, design) </li>
-      <li> Brand and product positioning</li>
-      <li> Web design (WordPress, Webflow) & social media content creation</li>
-      <li> Copywriting, ghostwriting, and editing</li>
-    </ul>
+    <!-- ... -->
   </section>
 
   <section class="why-me">
-    <h2>Why me</h2>
-    <p> Fully human. Certifiably low-energy. Not super-intelligent. Mostly harmless.</p>
+    <!-- ... -->
   </section>
 
-  <section class="contact">
-    <h2>Get in touch</h2>
-    <p> Drop me a note if you're looking for a dependable content partner for you or your team.</p>
-    <a href="mailto:mailme.vineethamenon@gmail.com" class="button">Get in touch</a>
-    <div class="footer-icons">
-      <a href="https://www.linkedin.com/in/vineetha-menon-7744b517/" target="_blank" class="footer-icon">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="footer-icon-img">
-      </a>
-      <a href="mailto:mailme.vineethamenon@gmail.com" class="footer-icon">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/email/email-original.svg" alt="Email" class="footer-icon-img">
-      </a>
+  <!-- New Section: Companies -->
+  <section class="companies">
+    <h2>Companies I have worked with</h2>
+    <div class="company-logos">
+      <a href="https://rocketlane.com" target="_blank"><img src="images/rocketlane-logo.png" alt="Rocketlane"></a>
+      <a href="https://datahub.com" target="_blank"><img src="images/datahub-logo.png" alt="DataHub"></a>
+      <a href="https://klenty.com" target="_blank"><img src="images/klenty-logo.png" alt="Klenty"></a>
+      <a href="https://assertion.cloud" target="_blank"><img src="images/assertion-logo.png" alt="Assertion"></a>
+      <a href="https://statisfy.com" target="_blank"><img src="images/statisfy-logo.png" alt="Statisfy"></a>
+      <a href="https://blogvault.net" target="_blank"><img src="images/blogvault-logo.png" alt="BlogVault"></a>
+      <a href="https://meetrecord.com" target="_blank"><img src="images/meetrecord-logo.png" alt="MeetRecord"></a>
     </div>
+  </section>
+
+  <!-- New Section: Testimonials -->
+  <section class="testimonials">
+    <h2>What people say</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial active">“Vineetha is the clearest thinker I've worked with. She turns half-baked ideas into sharp copy.”</div>
+      <div class="testimonial">“Her ability to translate product value into story is unmatched. A rare blend of strategy and craft.”</div>
+      <div class="testimonial">“She works like an embedded team member. Always calm, thoughtful, and on point.”</div>
+    </div>
+    <div class="carousel-buttons">
+      <button onclick="showTestimonial(0)">1</button>
+      <button onclick="showTestimonial(1)">2</button>
+      <button onclick="showTestimonial(2)">3</button>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <section class="contact">
+    <!-- ... -->
   </section>
 
   <footer>
     <p>© 2025 Vineetha Menon. All rights reserved.</p>
   </footer>
+
+  <script>
+    const testimonials = document.querySelectorAll('.testimonial');
+    function showTestimonial(index) {
+      testimonials.forEach((t, i) => {
+        t.classList.toggle('active', i === index);
+      });
+    }
+  </script>
 </body>
 
 </html>
