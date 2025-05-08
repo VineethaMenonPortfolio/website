@@ -23,7 +23,6 @@ html, body {
   width: 100%;
 }
 
-
 .site-header h1 {
   font-size: 3em;
   font-weight: 500;
@@ -47,7 +46,6 @@ section {
   background-color: #a8dadc;
 }
 
-
 /* Landing Section */
 .landing {
   background-color: #1d3557;
@@ -58,6 +56,7 @@ section {
 
 .landing-text h1 {
   font-size: 2.5em;
+  margin-bottom: 30px;  /* Ensure consistent spacing below */
 }
 
 /* About Section */
@@ -70,7 +69,7 @@ section {
 
 .about h2 {
   font-size: 2.5em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;  /* Consistent bottom margin */
   width: 100%;
 }
 
@@ -109,7 +108,7 @@ section {
 
 .key-skills h2 {
   font-size: 2.5em;
-  margin-bottom: 30px;
+  margin-bottom: 30px;  /* Consistent bottom margin */
 }
 
 .skills-grid {
@@ -145,7 +144,7 @@ section {
 
 .companies h2 {
   font-size: 2.5em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;  /* Consistent bottom margin */
   width: 100%;
 }
 
@@ -187,7 +186,7 @@ section {
 }
 
 .testimonial-block p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;  /* Consistent bottom margin */
 }
 
 .testimonial-block p:last-child {
@@ -202,7 +201,7 @@ section {
 
 .why-me p {
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;  /* Consistent bottom margin */
 }
 
 /* Contact Section */
@@ -212,12 +211,12 @@ section {
 
 .contact h2 {
   font-size: 2.5em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;  /* Consistent bottom margin */
 }
 
 .contact p {
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;  /* Consistent bottom margin */
 }
 
 .button {
