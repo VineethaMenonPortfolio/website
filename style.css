@@ -1,37 +1,41 @@
 /* Base styles */
 body {
   font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  color: #222;
   margin: 0;
   padding: 0;
+  color: #222;
+  background-color: #fff;
   line-height: 1.6;
 }
 
+/* Global section styling */
 section {
   padding: 80px 40px;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Landing section */
 .landing {
-  background-color: #f8fdfa;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  background-color: #f8fdfa;
   padding: 100px 60px;
+  gap: 40px;
 }
 
 .landing-text {
-  max-width: 500px;
+  max-width: 480px;
   flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.7;
 }
 
 .landing-text h1 {
@@ -39,71 +43,12 @@ h2 {
   margin-bottom: 20px;
 }
 
-.landing-text p {
-  font-size: 1.125rem;
-  line-height: 1.7;
-}
-
 .landing img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* About section */
 .about {
-  background-color: #ffffff;
-  text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.about ul li {
-  margin-bottom: 10px;
-}
-
-/* Section Break */
-.section-break {
-  border-top: 2px solid #e0e0e0;
-  margin: 40px auto;
-  width: 80%;
-}
-
-/* Skills section */
-.skills-section {
-  background-color: #f0f8f7;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  padding: 0;
-  margin: 30px 0 40px 0;
-  list-style: none;
-}
-
-.skills li {
-  background-color: #ffffff;
-  color: #004d4d;
-  border: 1px solid #b2dfdb;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: background 0.2s ease;
-}
-
-.skills li:hover {
-  background-color: #e0f7f5;
-  cursor: default;
-}
-
-/* Logos / Compani*
