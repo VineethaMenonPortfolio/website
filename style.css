@@ -5,28 +5,33 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f4f4f4;
+  line-height: 1.6;
+  color: #555;
 }
 
 h1, h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', sans-serif;
   margin-bottom: 20px;
+  color: #333;
 }
 
 h1 {
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 /* Header Styles */
@@ -40,7 +45,7 @@ p {
 /* Landing Section */
 .landing {
   background-color: #ffffff;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 .landing-content {
@@ -52,22 +57,23 @@ p {
 }
 
 .landing-image {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .landing-text h1 {
-  font-size: 2rem;
-  color: #333;
+  font-size: 2.2rem;
   max-width: 600px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* About Section */
 .about {
   background-color: #ecf0f1;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -82,12 +88,13 @@ p {
 .about p {
   max-width: 800px;
   margin: 0 auto 20px;
+  font-size: 1.1rem;
 }
 
 /* Key Skills Section */
 .key-skills {
   background-color: #ffffff;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -95,7 +102,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   padding: 0;
   list-style-type: none;
 }
@@ -103,9 +110,10 @@ p {
 .skills li {
   background-color: #3498db;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border-radius: 5px;
   font-size: 1.1rem;
+  font-weight: 600;
   transition: transform 0.3s ease;
 }
 
@@ -116,7 +124,7 @@ p {
 /* Companies Section */
 .companies {
   background-color: #ecf0f1;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 .company-logos {
@@ -128,15 +136,15 @@ p {
 }
 
 .company-logos img {
-  max-width: 120px;  /* Ensure all logos are the same size */
+  max-width: 130px;
   height: auto;
-  object-fit: contain; /* Maintain the logo aspect ratio */
+  object-fit: contain;
 }
 
 /* Testimonials Section */
 .testimonials {
   background-color: #ffffff;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -145,6 +153,7 @@ p {
   margin: 0 auto 20px;
   font-style: italic;
   color: #555;
+  font-size: 1.2rem;
 }
 
 .testimonials h2 {
@@ -154,19 +163,20 @@ p {
 /* Why Me Section */
 .why-me {
   background-color: #ecf0f1;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
 .why-me p {
   max-width: 800px;
   margin: 0 auto 20px;
+  font-size: 1.1rem;
 }
 
 /* Contact Section */
 .contact {
   background-color: #ffffff;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
