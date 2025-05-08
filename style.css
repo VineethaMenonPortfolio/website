@@ -1,42 +1,34 @@
-/* General reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body and font settings */
-body {
+/* Body and Font Settings */
+html, body {
+  height: 100%;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f4f4f4; /* Light gray background color */
+  background-color: #f4f4f4;
   text-align: center;
-  min-height: 100vh; /* Ensure full screen height */
-  display: flex;
-  flex-direction: column;
 }
 
-/* Set background color for full screen */
-html, body {
-  height: 100%;
-}
-
+/* Site Header */
 .site-header {
-  background-color: #1d3557; /* Dark blue */
+  background-color: #1d3557;
   color: #fff;
-  text-align: center;
-  padding: 20px 20px;
+  padding: 20px 40px;
   width: 100%;
 }
 
 .site-header h1 {
-  font-family: 'Playfair Display', serif;
   font-size: 3em;
   font-weight: 500;
 }
 
-/* Section styles */
+/* Section Base Styles */
 section {
   padding: 60px 40px;
   width: 100%;
@@ -45,35 +37,33 @@ section {
   align-items: center;
 }
 
-/* Alternate background colors */
+/* Alternating Backgrounds */
 .section-a {
-  background-color: #f1faee; /* Light color */
+  background-color: #f1faee;
 }
 
 .section-b {
-  background-color: #a8dadc; /* Soft teal */
+  background-color: #a8dadc;
 }
 
 /* Landing Section */
 .landing {
-  text-align: center;
-  background-color: #1d3557; /* Dark blue */
+  background-color: #1d3557;
   color: #fff;
-  padding: 50px 40px;
+  padding: 80px 40px;
+  text-align: center;
 }
 
 .landing-text h1 {
-  font-family: 'Playfair Display', serif;
   font-size: 2.5em;
 }
 
 /* About Section */
 .about {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  padding: 40px;
+  padding: 60px 40px;
 }
 
 .about h2 {
@@ -86,9 +76,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .about-text {
@@ -98,8 +89,8 @@ section {
 }
 
 .about-text ul {
-  list-style: none;
-  text-align: left;
+  list-style: disc;
+  padding-left: 20px;
 }
 
 .about-image {
@@ -111,8 +102,7 @@ section {
 
 /* Key Skills Section */
 .key-skills {
-  text-align: center;
-  padding: 40px 20px;
+  padding: 60px 40px;
 }
 
 .key-skills h2 {
@@ -131,13 +121,13 @@ section {
 .skill-box {
   background-color: #fff;
   border: 2px solid #ccc;
-  padding: 20px 30px;
-  font-size: 1.2em;
+  padding: 15px 25px;
+  font-size: 1em;
   font-weight: 600;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: all 0.3s;
 }
 
 .skill-box:hover {
@@ -148,8 +138,7 @@ section {
 
 /* Companies Section */
 .companies {
-  text-align: center;
-  padding: 40px 20px;
+  padding: 60px 40px;
 }
 
 .companies h2 {
@@ -160,6 +149,7 @@ section {
 
 .company-logos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -167,9 +157,10 @@ section {
 }
 
 .company-logos img {
-  width: 150px;
+  width: 120px;
   height: auto;
-  transition: transform 0.3s;
+  object-fit: contain;
+  transition: transform 0.3s, filter 0.3s;
 }
 
 .company-logos img:hover {
@@ -179,25 +170,33 @@ section {
 
 /* Testimonials Section */
 .testimonials {
-  text-align: center;
+  padding: 60px 40px;
   font-style: italic;
-  padding: 40px 20px;
+  background-color: #f1faee;
 }
 
-.testimonials p {
+.testimonial-block {
+  max-width: 700px;
+  margin: 0 auto;
   font-size: 1.2em;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.testimonial-block p {
   margin-bottom: 20px;
 }
 
-.testimonials p:last-child {
+.testimonial-block p:last-child {
   font-style: normal;
   font-weight: bold;
 }
 
 /* Why Me Section */
 .why-me {
-  text-align: center;
-  padding: 40px 20px;
+  padding: 60px 40px;
 }
 
 .why-me p {
@@ -207,8 +206,7 @@ section {
 
 /* Contact Section */
 .contact {
-  text-align: center;
-  padding: 40px 20px;
+  padding: 60px 40px;
 }
 
 .contact h2 {
@@ -232,7 +230,7 @@ section {
 }
 
 .button:hover {
-  background-color: #457b9d; /* Lighter blue */
+  background-color: #457b9d;
 }
 
 /* Footer */
@@ -240,7 +238,7 @@ footer {
   background-color: #1d3557;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 20px 40px;
   font-size: 1em;
 }
 
@@ -277,11 +275,10 @@ footer a:hover {
 
   .company-logos {
     flex-direction: column;
-    align-items: center;
   }
 
   .company-logos img {
-    width: 120px;
+    width: 100px;
   }
 
   .contact .button {
