@@ -1,162 +1,58 @@
-/* Reset and base styles */
+/* Global Reset */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body styling */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #fff;
-  color: #222;
+  background-color: #f8f8f8;
+  color: #333;
   line-height: 1.6;
-  padding: 0 5%;
 }
 
-/* Header */
+/* Header styling */
 .site-header {
   display: flex;
-  align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #ddd;
   justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .site-header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  font-size: 2rem;
+  color: #333;
 }
 
-/* Landing section */
+/* Landing Section */
 .landing {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 60px 0;
+  align-items: center;
+  padding: 40px 30px;
+  background-color: #fff;
 }
 
 .landing-content {
   display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .landing-image {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  flex-shrink: 0;
-}
-
-.landing-text {
-  max-width: 600px;
+  margin-right: 20px;
 }
 
 .landing-text h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  margin-bottom: 16px;
-}
-
-.landing-text p {
-  margin-bottom: 10px;
-}
-
-/* Sections */
-.about,
-.why-me,
-.companies,
-.testimonials,
-.contact {
-  padding: 40px 0;
-  border-top: 1px solid #eee;
-}
-
-h2 {
-  font-size: 22px;
-  margin-bottom: 16px;
-  font-family: 'Playfair Display', serif;
-}
-
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.skills li {
-  background-color: #f1f1f1;
-  padding: 6px 12px;
-  border-radius: 4px;
-}
-
-/* Company logos */
-.company-logos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
-.company-logos img {
-  width: 100px;
-  height: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: none;
-}
-
-.company-logos img:hover {
-  transform: scale(1.05);
-}
-
-/* Testimonials */
-.testimonial-carousel {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  font-style: italic;
-}
-
-/* Contact */
-.contact .button {
-  display: inline-block;
-  margin-top: 16px;
-  padding: 10px 20px;
-  background-color: #222;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.footer-icons {
-  display: flex;
-  gap: 12px;
-  margin-top: 20px;
-  justify-content: center;
-}
-
-.footer-icon-img {
-  width: 24px;
-  height: 24px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  font-size: 14px;
-  padding: 20px 0;
-  color: #666;
-  border-top: 1px solid #eee;
-}
+  font-size: 1.8rem;
+  colo
