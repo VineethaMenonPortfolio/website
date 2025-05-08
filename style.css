@@ -87,6 +87,7 @@ ul {
   }
 }
 
+/* Landing Section */
 .landing {
   display: flex;
   justify-content: center;
@@ -100,7 +101,7 @@ ul {
   max-width: 1000px;
   gap: 2rem;
   align-items: center;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .landing-image {
@@ -111,6 +112,16 @@ ul {
   flex-shrink: 0;
 }
 
+.landing-text {
+  max-width: 600px;
+}
+
+.landing-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
 footer {
   background-color: #f4f4f4;
   padding: 20px;
@@ -122,17 +133,8 @@ footer {
   display: inline-block;
 }
 
-.footer-icon {
+.footer-icon-img {
   width: 32px;
   height: 32px;
-}
-
-.landing-text {
-  max-width: 600px;
-}
-
-.landing-text h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
 }
 
