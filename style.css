@@ -1,190 +1,207 @@
-/* Base styles */
+/* Global Styles */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #333;
-  line-height: 1.6;
+  box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h1, h2, h3, p {
+  margin: 0;
 }
 
 /* Header */
 .site-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Landing Section */
+.landing {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
-}
-
-.site-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-}
-
-.site-header a {
-  color: #0073b1;
-  font-weight: 600;
-  font-family: 'Inter', sans-serif;
-}
-
-/* Landing section */
-.landing {
   padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 40px;
 }
 
 .landing-content {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1000px;
-  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.landing-image {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
+.landing-text {
+  max-width: 50%;
 }
 
 .landing-text h1 {
-  font-size: 24px;
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
 .landing-text p {
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.landing-image {
+  max-width: 45%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* About Section */
-.about, .why-me, .contact {
+.about {
   padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
-.about h2, .why-me h2, .contact h2 {
-  font-size: 22px;
+.about h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
+}
+
+.about p, .about ul {
+  font-size: 1rem;
 }
 
 .skills {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
 }
 
-/* Companies Section */
-#companies {
+.skills li {
+  margin: 5px 0;
+}
+
+/* Why Me Section */
+.why-me {
   padding: 40px 20px;
-  background-color: #fafafa;
-  text-align: center;
+  background-color: #f4f4f4;
 }
 
-#companies h2 {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-
-.company-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.company-logos a {
-  display: inline-block;
-  transition: transform 0.2s;
-}
-
-.company-logos a:hover {
-  transform: scale(1.05);
-}
-
-.company-logos img {
-  max-height: 40px;
-  object-fit: contain;
-}
-
-/* Testimonials Section */
-#testimonials {
-  padding: 60px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-#testimonials h2 {
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-.swiper {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.swiper-slide {
-  background-color: #f8f8f8;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.testimonial-text {
-  font-style: italic;
-  font-size: 16px;
+.why-me h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.testimonial-author {
-  font-weight: bold;
-  font-size: 14px;
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-/* Contact */
-.button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #0073b1;
+.contact a {
+  text-decoration: none;
+  background-color: #333;
   color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
   border-radius: 5px;
-  font-weight: 600;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #005f8d;
-}
-
-/* Footer icons */
-.footer-icons {
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
-
-.footer-icon-img {
-  width: 32px;
-  height: 32px;
+  display: inline-block;
 }
 
 /* Footer */
 footer {
+  background-color: #333;
+  color: white;
   text-align: center;
   padding: 20px;
-  background-color: #f2f2f2;
-  font-size: 14px;
-  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer-icons {
+  margin-top: 20px;
+}
+
+.footer-icon {
+  margin: 0 10px;
+}
+
+.footer-icon-img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Companies Section */
+.companies {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.companies h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.companies-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.companies-logos img {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.companies-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* Testimonials Section (Carousel) */
+.testimonials {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  text-align: center;
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial .author {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Ensure proper layout for different screen sizes */
+@media (max-width: 768px) {
+  .landing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-image {
+    max-width: 80%;
+  }
+
+  .landing-text {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .companies-logos {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .companies-logos img {
+    width: 80px;
+  }
 }
