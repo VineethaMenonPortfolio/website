@@ -175,28 +175,23 @@ section {
   background-color: #f1faee;
 }
 
-.testimonial-block {
-  max-width: 700px;
-  margin: 0 auto;
+.testimonials h2 {
   font-size: 2.5em;
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.testimonial-block p {
   margin-bottom: 30px;  /* Consistent bottom margin */
 }
 
-.testimonial-block p:last-child {
-  font-style: normal;
-  font-weight: bold;
+.testimonials p {
+  margin-bottom: 30px;  /* Consistent bottom margin */
 }
 
 /* Why Me Section */
 .why-me {
   padding: 30px 40px;
+}
+
+.why-me h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;  /* Consistent bottom margin */
 }
 
 .why-me p {
