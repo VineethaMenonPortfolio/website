@@ -1,245 +1,145 @@
-/* Reset default styles */
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styles */
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: #333;
-  padding: 0 20px;  /* Add padding to body for side margins */
-  max-width: 100%;
-  width: 100%;
 }
 
-/* Header styles */
+/* Header */
 .site-header {
   background-color: #333;
   color: #fff;
+  padding: 15px 0;
   text-align: center;
-  padding: 20px 0;
 }
 
 .site-header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  font-weight: 600;
+  font-size: 36px;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 0;
+  text-align: center;
 }
 
 /* Landing Section */
 .landing {
-  background-color: #f5f5f5;
-  padding: 80px 20px;  /* Adjust padding to give more height to landing */
-  text-align: center;
-  width: 100%;  /* Ensure background covers full width */
-  position: relative;  /* Ensures heading stays on top of the section */
+  background-color: #f4f4f4;
+  padding: 40px 0;
 }
 
-.landing .landing-text h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  font-weight: 500;
-  margin-bottom: 10px;
-  color: #333;
-  text-align: center;  /* Center the heading */
+.landing-text h1 {
+  font-size: 32px;
+  margin: 0;
 }
 
-/* Section background alternating */
-.section-a {
-  background-color: #f5f5f5;
-  width: 100%;  /* Full width */
-}
-
-.section-b {
-  background-color: #e0e0e0;
-  width: 100%;  /* Full width */
-}
-
-/* About Me Section */
+/* About Section */
 .about {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;  /* Center the section */
-  width: 100%;
-}
-
-.about h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center;  /* Center the heading */
-  width: 100%;
+  padding: 60px 0;
 }
 
 .about-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
 }
 
 .about-text {
   width: 60%;
+  padding-right: 40px;
+  text-align: left;
 }
 
 .about-image {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 /* Key Skills Section */
 .key-skills {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;  /* Center the section */
-  width: 100%;
+  background-color: #f9f9f9;
 }
 
-.key-skills h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center;  /* Center the heading */
-  width: 100%;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.skills {
-  list-style: none;
+.skill-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
 }
 
-.skills li {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-/* Companies I've Worked With */
+/* Companies Section */
 .companies {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;  /* Center the section */
-  width: 100%;
-}
-
-.companies h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center;  /* Center the heading */
-  width: 100%;
+  background-color: #fff;
 }
 
 .company-logos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
 
 .company-logos a {
-  margin: 10px;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background-color: #f4f4f4;
+  padding: 10px;
 }
 
 .company-logos img {
-  width: 100px;
-  height: auto;
   max-width: 100%;
-  object-fit: contain;
+  height: auto;
 }
 
 /* Testimonials Section */
 .testimonials {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;  /* Center the section */
-  width: 100%;
-}
-
-.testimonials h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center;  /* Center the heading */
-  width: 100%;
-}
-
-.testimonials p {
-  font-size: 1.2rem;
-  color: #333;
-  text-align: center;
+  background-color: #f4f4f4;
 }
 
 /* Why Me Section */
 .why-me {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;  /* Center the section */
-  width: 100%;
-}
-
-.why-me h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center;  /* Center the heading */
-  width: 100%;
-}
-
-.why-me p {
-  font-size: 1.2rem;
-  color: #333;
-  text-align: center;
+  background-color: #fff;
 }
 
 /* Contact Section */
 .contact {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;  /* Center the section */
-  width: 100%;
+  background-color: #f9f9f9;
 }
 
-.contact h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center;  /* Center the heading */
-  width: 100%;
-}
-
-.contact p {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
+.contact .button {
   background-color: #333;
   color: #fff;
-  font-size: 1rem;
+  padding: 10px 20px;
   text-decoration: none;
+  font-weight: bold;
   border-radius: 5px;
-  text-align: center;
 }
 
-.button:hover {
+.contact .button:hover {
   background-color: #555;
 }
 
@@ -247,46 +147,21 @@ body {
 footer {
   background-color: #333;
   color: #fff;
-  text-align: center;
   padding: 20px 0;
+  text-align: center;
 }
 
-footer p {
-  margin-bottom: 10px;
-}
-
-footer .footer-icon {
+.footer-icon img {
+  width: 30px;
+  height: 30px;
   margin-top: 10px;
 }
 
-footer .footer-icon-img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+/* Alternate Background Colors */
+.section-a {
+  background-color: #f9f9f9;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-text {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .about-image {
-    margin-bottom: 20px;
-  }
-
-  .company-logos {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .company-logos a {
-    margin: 10px 0;
-  }
+.section-b {
+  background-color: #fff;
 }
