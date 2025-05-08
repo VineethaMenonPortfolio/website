@@ -86,3 +86,37 @@ ul {
     font-size: 1.6rem;
   }
 }
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.landing-content {
+  display: flex;
+  max-width: 1000px;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.landing-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.landing-text {
+  max-width: 600px;
+}
+
+.landing-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
