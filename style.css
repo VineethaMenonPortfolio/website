@@ -50,7 +50,7 @@ section {
 .landing {
   background-color: #1d3557;
   color: #fff;
-  padding: 120px 40px;  /* Increased padding */
+  padding: 120px 60px;  /* Increased padding */
   text-align: center;
 }
 
@@ -64,7 +64,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 40px;
+  padding: 60px 60px;
 }
 
 .about h2 {
@@ -91,7 +91,7 @@ section {
 
 .about-text ul {
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .about-image {
