@@ -50,7 +50,7 @@ section {
 .landing {
   background-color: #1d3557;
   color: #fff;
-  padding: 120px 60px;  /* Increased padding */
+  padding: 120px 90px;  /* Increased padding */
   text-align: center;
 }
 
@@ -64,7 +64,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 60px;
+  padding: 60px 80px;
 }
 
 .about h2 {
@@ -85,7 +85,7 @@ section {
 
 .about-text {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 40px;
   text-align: left;
 }
 
@@ -95,7 +95,7 @@ section {
 }
 
 .about-image {
-  border-radius: 70%;
+  border-radius: 90%;
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -181,6 +181,7 @@ section {
 }
 
 .testimonials p {
+    font-size: 1.2em;
   margin-bottom: 30px;  /* Consistent bottom margin */
 }
 
