@@ -23,6 +23,7 @@ html, body {
   width: 100%;
 }
 
+
 .site-header h1 {
   font-size: 3em;
   font-weight: 500;
@@ -51,6 +52,14 @@ section {
   background-color: #1d3557;
   color: #fff;
   padding: 80px 40px;
+  text-align: center;
+}
+
+/* Landing Section */
+.landing {
+  background-color: #1d3557;
+  color: #fff;
+  padding: 120px 40px;  /* Increased padding */
   text-align: center;
 }
 
@@ -94,7 +103,7 @@ section {
 }
 
 .about-image {
-  border-radius: 50%;
+  border-radius: 70%;
   width: 200px;
   height: 200px;
   object-fit: cover;
