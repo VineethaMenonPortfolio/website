@@ -13,7 +13,7 @@ h1, h2 {
   text-align: center; /* Ensuring headings are centered */
 }
 
-* Landing Section */
+/* Landing Section */
 .landing {
   display: flex;
   justify-content: center;
@@ -37,6 +37,7 @@ h1, h2 {
 
 .landing-text {
   flex: 1;
+  max-width: 600px; /* Limit the width of the text container */
 }
 
 .landing h1 {
@@ -48,6 +49,7 @@ h1, h2 {
   font-size: 1rem;
   line-height: 1.6;
 }
+
 
 /* About Me Section */
 .about {
