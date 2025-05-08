@@ -8,12 +8,22 @@ body {
   line-height: 1.6;
 }
 
-section {
-  padding: 80px 40px;
-  width: 100%;
+/* Reusable layout wrapper */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
+/* Global section styling */
+section {
+  width: 100%;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
+/* Global heading styles */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
@@ -28,13 +38,13 @@ h1, h2, h3 {
   align-items: center;
   justify-content: center;
   background-color: #f8fdfa;
-  padding: 100px 60px;
-  gap: 60px;
+  padding: 100px 20px;
+  gap: 40px;
 }
 
 .landing-text {
-  flex: 1 1 400px;
-  max-width: 500px;
+  max-width: 600px;
+  flex: 1;
   font-size: 1.125rem;
   line-height: 1.7;
 }
@@ -45,18 +55,18 @@ h1, h2, h3 {
 }
 
 .landing img {
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
-  flex-shrink: 0;
 }
 
 /* About section */
 .about {
   background-color: #ffffff;
-  max-width: 800px;
-  margin: 0 auto;
+}
+
+.about .container {
   text-align: left;
 }
 
@@ -72,7 +82,6 @@ h1, h2, h3 {
 /* Skills section */
 .skills-section {
   background-color: #f0f8f7;
-  padding-bottom: 80px;
 }
 
 .skills {
@@ -106,8 +115,6 @@ h1, h2, h3 {
   background-color: #e6f2f0;
   text-align: center;
   padding: 40px 20px;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .company-logos {
@@ -122,16 +129,38 @@ h1, h2, h3 {
 .company-logos img {
   max-height: 40px;
   object-fit: contain;
-  filter: none; /* Ensures full color */
+  filter: none;
 }
 
 /* Why Me */
 .why-me {
   background-color: #e0f2f1;
   text-align: center;
+}
+
+.why-me .container {
   max-width: 700px;
   margin: 0 auto;
-  padding: 80px 40px;
+}
+
+/* Get in touch section */
+.get-in-touch {
+  background-color: #f0f8f7;
+  text-align: center;
+}
+
+.get-in-touch button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #004d4d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.get-in-touch button:hover {
+  background-color: #003636;
 }
 
 /* Testimonials */
@@ -140,33 +169,6 @@ h1, h2, h3 {
   text-align: center;
   font-style: italic;
   padding: 60px 40px;
-}
-
-/* Get in Touch */
-.get-in-touch {
-  background-color: #e0f2f1;
-  text-align: center;
-  padding: 80px 40px;
-}
-
-.get-in-touch p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.get-in-touch button {
-  padding: 12px 24px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 25px;
-  background-color: #00796b;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.get-in-touch button:hover {
-  background-color: #004d40;
 }
 
 /* Footer */
