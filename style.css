@@ -111,6 +111,22 @@ ul {
   flex-shrink: 0;
 }
 
+footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-icons a {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+}
+
 .landing-text {
   max-width: 600px;
 }
