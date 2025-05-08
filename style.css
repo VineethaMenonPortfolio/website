@@ -52,3 +52,107 @@ h1, h2, h3 {
 
 /* About section */
 .about {
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about ul li {
+  margin-bottom: 10px;
+}
+
+/* Section Break */
+.section-break {
+  border-top: 2px solid #e0e0e0;
+  margin: 60px auto;
+  width: 80%;
+}
+
+/* Skills section */
+.skills-section {
+  background-color: #f0f8f7;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  background-color: #ffffff;
+  color: #004d4d;
+  border: 1px solid #b2dfdb;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background 0.2s ease;
+}
+
+.skills li:hover {
+  background-color: #e0f7f5;
+}
+
+/* Logos section */
+.companies {
+  background-color: #e6f2f0;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.company-logos img {
+  max-height: 40px;
+  object-fit: contain;
+  filter: none;
+}
+
+/* Why Me */
+.why-me {
+  background-color: #e0f2f1;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #fefefe;
+  text-align: center;
+  font-style: italic;
+  padding: 60px 40px;
+}
+
+/* Footer */
+footer {
+  background-color: #e0f2f1;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 0.9rem;
+}
+
+footer img {
+  height: 18px;
+  vertical-align: middle;
+  margin-left: 6px;
+}
