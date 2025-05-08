@@ -1,162 +1,144 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
-
-/* General Styles */
+/* Global styles */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #f9f9f9;
   color: #222;
+  background-color: #fff;
+  line-height: 1.6;
 }
 
-/* Global Section Padding */
-section {
-  padding: 60px 30px;
-  margin-bottom: 60px;
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5em;
+  color: #111;
 }
 
-/* Header Section */
-header {
-  background-color: #ffffff;
-  text-align: left;
-  padding: 20px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #e0e0e0;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-header .logo {
-  max-width: 140px;
+img {
+  max-width: 100%;
   height: auto;
 }
 
-header .social-links {
-  display: none;
+section {
+  padding: 60px 40px;
+  border-top: 1px solid #eee;
 }
 
-/* Landing Section */
-.landing {
+section:first-of-type {
+  border-top: none;
+}
+
+.site-header {
+  padding: 40px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  background-color: #fafafa;
+}
+
+/* Landing section layout */
+.landing-content {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 40px;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.landing .image {
-  width: 160px;
-  height: 160px;
+.landing-image {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
 }
 
-.landing .text {
+.landing-text {
   flex: 1;
-  max-width: 600px;
-  text-align: left;
+  min-width: 250px;
 }
 
-.landing h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.landing p {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-}
-
-/* Logos Section */
-.logos {
+/* Logos styling */
+.company-logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
+  align-items: center;
 }
 
-.logos img {
-  width: 100px;
-  height: auto;
+.company-logos img {
+  max-height: 40px;
   object-fit: contain;
-  transition: transform 0.3s ease;
-  filter: none;
+  opacity: 0.9;
+  transition: transform 0.2s;
 }
 
-.logos img:hover {
+.company-logos img:hover {
   transform: scale(1.05);
 }
 
-/* Testimonials Section */
-.testimonials {
-  background-color: #ffffff;
+/* Skills list */
+.skills {
+  columns: 2;
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
-.testimonials h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 30px;
-  text-align: center;
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s;
 }
 
-.testimonial {
-  font-size: 1rem;
-  color: #444;
-  font-style: italic;
-  max-width: 800px;
-  padding: 20px;
-  margin: 0 auto 30px;
-  background-color: #f0f0f0;
-  border-left: 5px solid #007bff;
+.button:hover {
+  background-color: #444;
 }
 
-.testimonial p {
-  margin-bottom: 10px;
-}
-
-/* Footer Section */
+/* Footer */
 footer {
-  background-color: #333;
-  color: #fff;
   text-align: center;
-  padding: 30px;
+  padding: 40px 20px;
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+  font-size: 14px;
 }
 
-footer p {
-  font-size: 1rem;
+.footer-icon {
+  display: inline-block;
+  margin-top: 12px;
 }
 
-footer a {
-  color: #fff;
-  text-decoration: none;
+.footer-icon-img {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.footer-icon-img:hover {
+  filter: none;
 }
 
-/* Media Queries */
+/* Responsive */
 @media (max-width: 768px) {
-  .landing {
+  .landing-content {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .landing .text {
-    max-width: 90%;
-    text-align: center;
-  }
-
-  .logos {
-    justify-content: center;
-  }
-
-  .logos img {
-    width: 80px;
+  .skills {
+    columns: 1;
   }
 }
