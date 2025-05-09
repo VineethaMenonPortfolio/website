@@ -186,6 +186,7 @@ section {
 
 .testimonials p {
     font-size: 1.2em;
+    line-height: 1.8;
   margin-bottom: 30px;  /* Consistent bottom margin */
 }
 
@@ -201,7 +202,7 @@ section {
 
 .why-me p {
   font-size: 1.0em;
-  margin-bottom: 30px;  /* Consistent bottom margin */
+    margin-bottom: 30px;  /* Consistent bottom margin */
   line-height: 1.8;
 }
 
