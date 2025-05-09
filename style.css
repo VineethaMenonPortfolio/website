@@ -218,6 +218,7 @@ section {
 
 .contact p {
   font-size: 1.0em;
+    line-height: 1.8;
   margin-bottom: 30px;  /* Consistent bottom margin */
 }
 
